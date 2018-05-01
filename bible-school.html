@@ -14,37 +14,30 @@
 <link type="text/css" rel="stylesheet" href="css/swipebox.css" />
 <link type="text/css" rel="stylesheet" href="css/animations.css" />
 <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,900' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <script type="text/javascript" src="datajs/globalvar.js"></script>
+<script type="text/javascript" src="datajs/jq.js"></script>
 <script type="text/javascript" src="datajs/leftmenu.js"></script>
-	
-	<script type="text/javascript" src="datajs/jq.js"></script>
-    
-	
+<script type="text/javascript" src="datajs/user_menu.js"></script>
+<script type="text/javascript" src="datajs/submit_contact_mail.js"></script>
 </head>
 <body id="mobile_wrap">
-<script type="text/javascript" src="cordova.js"></script>
-    <script type="text/javascript" src="js/index.js"></script>
-	 
-    <script type="text/javascript"> 
-        app.initialize();
-    </script>
-<div id="GCM_ID" style="display:none;"></div>
+
     <div class="statusbar-overlay"></div>
 
     <div class="panel-overlay"></div>
 
     <div class="panel panel-left panel-reveal">
-			<nav class="sidebar-nav">
-			<ul id="sidemenu">
-			
-			</ul>
-			</nav>
+      <nav class="sidebar-nav">
+      <ul id="sidemenu">
+      </ul>
+      </nav>
     </div>
 
     <div class="panel panel-right panel-reveal">
       <div class="user_login_info" id="user_info_box">
-	  
-                
+    
+               
       </div>
     </div>
 
@@ -55,44 +48,74 @@
 
 
         <div class="pages">
+  <div data-page="contact" class="page no-toolbar no-navbar">
+    <div class="page-content">
+    
+  <div class="navbarpages">
+    <div class="navbar_left">
+      <div class="logo_text"><a href="index.html"><img src="images/logo.png"></a></div>
+    </div>      
+    <a href="#" data-panel="left" class="open-panel">
+      <div class="navbar_right"><img src="images/icons/red/menu.png" alt="" title="" /></div>
+    </a>
+    <a href="index.html">
+      <div class="navbar_right whitebg"><img src="images/icons/white/home.png" alt="" title="" /></div>
+    </a>          
+  </div>
+  
+     <div id="pages_maincontent">
+      
+      <h2 class="page_title">Bible School</h2>
+    
+     <div class="page_single layout_fullwidth_padding">   
 
-          <div data-page="index" class="page homepage">
-            <div class="page-content homepagecontent">	
+            <h2 id="Note"></h2>
+            <div class="contactform">
 
-                        <div class="homenavbar">
-                                <h1>CNM <span>Online</span></h1>							
-                        </div>
-			
-			<nav class="main-nav">
-			<ul>
+<img src="images/bibleschool.jpg"width="100%"><br>
+             
 
-			<li class="navbg1"><a href="featured_photo.html" class="navbgtranspink"><img src="images/icons/white/featured.png" alt="" title="" /><span>Featured</span></a></li>      
-      <li class="navbg2"><a href="service_video.html" class="navbgtransyellow"><img src="images/icons/white/tv.png" alt="" title="" /><span>CNM TV</span></a></li>
 
-      <li class="navbg3"><a href="events.html" class="navbgtransgreen"><img src="images/icons/white/event.png" alt="" title="" /><span>Events & Meetings</span></a></li>        
-      <li class="navbg4"><a href="cnm-radio.html" class="navbgtransred"><img src="images/icons/white/radio.png" alt="" title="" /><span>CNM Radio</span></a></li>
 
-      <li class="navbg5"><a href="abc-church.html" class="navbgtransblack"><img src="images/icons/white/abc.png" alt="" title="" /><span>ABC Church</span></a></li>     
-      <li class="navbg6"><a href="cnm-prayer-altar.html" class="navbgtransblue"><img src="images/icons/white/prayer.png" alt="" title="" /><span>CNM Prayer Altar</span></a></li>
 
-      <li class="navbg7"><a href="cnm-media-craft.html" class="navbgtransyellow"><img src="images/icons/white/media.png" alt="" title="" /><span>CNM Media Craft</span></a></li>     
-      <li class="navbg8"><a href="cnm-stores.html" data-popup=".popup-login" class="navbgtransviolet"><img src="images/icons/white/stores.png" alt="" title="" /><span>CNM Stores</span></a></li>
 
-      <li class="navbg9"><a href="support.html" class="navbgtransred"><img src="images/icons/white/support.png" alt="" title="" /><span>Support</span></a></li>
-      <li class="navbg10"><a href="#" data-popup=".popup-social" class="open-popup" class="navbgtransgreen"><img src="images/icons/white/join.png" alt="" title="" /><span>Join Us</span></a></li>
 
-      <li class="navbg11"><a href="contact.html"  class="navbgtransviolet"><img src="images/icons/white/contact.png" alt="" title="" /><span>Contact</span></a></li>
-      <li class="navbg12"><a href="about.html" data-popup=".popup-social" class="navbgtransyellow"><img src="images/icons/white/about.png" alt="" title="" /><span>About</span></a></li>
 
-      <li class="navbg13"><a href="bible-school.html" class="navbgtransgreen"><img src="images/icons/white/bible.png" alt="" title="" /><span>Bible School</span></a></li>        
-      <li class="navbg14"><a href="sheds.html" class="navbgtransred"><img src="images/icons/white/sheds.png" alt="" title="" /><span>SHEDS</span></a></li>
 
-			</ul>
-			</nav>	    
+
+
+             <br><br><br><br>
+           
+     
+            <!--<input type="text" name="ContactPurpose" id="ContactPurpose" value="" class="form_input required" />-->
+            
+            <!--<input class="" type="hidden" name="to"  value="youremail@yourwebsite.com" />
+            <input class="" type="hidden" name="subject" value="Contacf form message" />
+            <label id="loader" style="display:none;"><img src="images/loader.gif" alt="Loading..." id="LoadingGraphic" /></label>-->
+            </form>
             </div>
-          </div>
-        </div>
+            
+      <!--<h3>Our Location</h3>-->
+      
+      <!--<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193578.74109041138!2d-73.97968099999997!3d40.70331274999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew+York+NYC%2C+New+York%2C+Statele+Unite+ale+Americii!5e0!3m2!1sro!2s!4v1425027721891" width="100%" height="200" frameborder="0" style="border:0"></iframe> -->
+      
+     <!-- <blockquote>
+      Adress: New York 23066 / Pacific Street / Brooklyn <br />
+      Email: email@yourwebsite.com <br />
+      Mobile: +900 456 567 77
+      </blockquote> -->
+      
+      <!--<a href="tel:+900 456 567 77" class="button_full btyellow external">Call Us Now!</a> -->  
+      
+      <div class="clear"></div>
+      </div>
+      
+      </div>
+    </div>
+  </div>
+</div>
 
+        
         <!-- Bottom Toolbar-->
         <div class="toolbar">
               <div class="toolbar-inner">
@@ -103,13 +126,13 @@
               <li ><a href="#" data-popup=".popup-social" class="open-popup"><img src="images/icons/white/shar.png" alt="" title="" /></a></li>
               <li><a href="contact.html"><img src="images/icons/white/contac.png" alt="" title="" /></a></li>              
               </ul>
-              </div>  
+              </div>   
         </div>
 
       </div>
     </div>
 
-	
+  
     <!-- Login Popup -->
     <div class="popup popup-login">
         <div class="content-block">
@@ -143,18 +166,18 @@
                     <input type="password" name="Password" value="" class="form_input required" placeholder="Password" />
                     <input type="submit" name="submit" class="form_submit" id="submit" value="SIGN UP" />
                 </form>
-		<h5>- OR REGISTER WITH A SOCIAL ACCOUNT -</h5>
-		<div class="signup_social">
-			<a href="http://www.facebook.com/" class="signup_facebook external">FACEBOOK</a>
-			<a href="http://www.twitter.com/" class="signup_twitter external">TWITTER</a>            
-		</div>		
+    <h5>- OR REGISTER WITH A SOCIAL ACCOUNT -</h5>
+    <div class="signup_social">
+      <a href="http://www.facebook.com/" class="signup_facebook external">FACEBOOK</a>
+      <a href="http://www.twitter.com/" class="signup_twitter external">TWITTER</a>            
+    </div>    
             </div>
             <div class="close_popup_button">
                 <a href="#" class="close-popup"><img src="images/icons/black/menu_close.png" alt="" title="" /></a>
             </div>
         </div>
     </div>
-	
+  
     <!-- Forgot Password Popup -->
     <div class="popup popup-forgot">
         <div class="content-block">
@@ -173,12 +196,12 @@
             </div>
         </div>
     </div>
-	
+  
     <!-- Social Icons Popup -->
     <div class="popup popup-social">
     <div class="content-block">
       <h4>Social Share</h4>
-     <p>Stay connected with CNM Online .</p>
+      <p>Stay connected with CNM Online .</p>
       <ul class="social_share">
       <li><a href="http://twitter.com/" class="external"><img src="images/icons/black/twitter.png" alt="" title="" /><span>TWITTER</span></a></li>
       <li><a href="https://www.facebook.com/cnmindia/" class="external"><img src="images/icons/black/facebook.png" alt="" title="" /><span>FACEBOOK</span></a></li>
@@ -191,8 +214,6 @@
       <div class="close_popup_button"><a href="#" class="close-popup"><img src="images/icons/black/menu_close.png" alt="" title="" /></a></div>
     </div>
     </div>
-	
-	
     
 <script type="text/javascript" src="js/jquery-1.10.1.min.js"></script>
 <script type="text/javascript" src="js/jquery.validate.min.js" ></script>
