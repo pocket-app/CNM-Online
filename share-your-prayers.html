@@ -65,27 +65,51 @@
   
      <div id="pages_maincontent">
       
-      <h2 class="page_title">CNM Prayer Altar</h2>
+      <h2 class="page_title">Share Your Prayers</h2>
     
      <div class="page_single layout_fullwidth_padding">   
 
             <h2 id="Note"></h2>
             <div class="contactform">
-
-<a href="share-your-prayers.html"><img src="images/share-your-prayers.png"width="100%"></a><br>
-<a href="share-your-testimonies.html"><img src="images/share-your-testimonies.png"width="100%"></a><br>
-<a href="be-a-volunteer.html"><img src="images/be-a-volunteer.png"width="100%"></a><br>
-
-
-
-
-
-
-             <br><br><br><br>
-           
-     
+            <form class="cmxform" id="ContactForm" method="post" action="">
+            <label>Name:</label>
+            <input type="text" name="ContactName" id="ContactName" value="" class="form_input required" />
+            <label>Phone No:</label>
+            <input type="text" name="ContactPhone" id="ContactPhone" value="" class="form_input required phone" />
+      <label>Prayer Needed For:</label>
+      <select name="ContactPurpose" id="ContactPurpose" class="form_input required" style="padding:8px;">
+        <option value="">--select--</option>
+        <option value="Prayer Request">Parent</option>
+        <option value="Apply for Membership">Child</option>
+        <option value="Apply for Baptism">Spouse</option>
+        <option value="Apply for Marriage">Grandparents</option>
+        <option value="Testimony">Grandchild</option>
+        <option value="Donate">Brother</option>
+        <option value="Testimony">Sister</option>
+        <option value="Donate">Friend</option>
+        <option value="Testimony">Cousin</option>
+        <option value="Donate">Classmate</option>
+        <option value="Testimony">Roommate</option>
+        <option value="Donate">In Laws</option>
+        <option value="Donate">Colleague</option>
+        <option value="Others">Others</option>
+      </select>
+      <label>Focused Area:</label>
+      <select name="ContactPurpose" id="ContactPurpose" class="form_input required" style="padding:8px;">
+        <option value="">--select--</option>
+        <option value="Prayer Request">Mental Peace</option>
+        <option value="Apply for Membership">Physical healing</option>
+        <option value="Apply for Baptism">Properties</option>
+        <option value="Apply for Marriage">Finance</option>
+        <option value="Testimony">Relation</option>
+        <option value="Donate">Judicial</option>
+        <option value="Donate">Old Age Compilation</option>
+        <option value="Others">Others</option>
+      </select>
             <!--<input type="text" name="ContactPurpose" id="ContactPurpose" value="" class="form_input required" />-->
-            
+            <label>Your Message:</label>
+            <textarea name="ContactComment" id="ContactComment" class="form_textarea textarea required" rows="" cols=""></textarea>
+            <input type="button" name="submit" class="form_submit" id="insert" value="Send" onClick="sud_data()" />
             <!--<input class="" type="hidden" name="to"  value="youremail@yourwebsite.com" />
             <input class="" type="hidden" name="subject" value="Contacf form message" />
             <label id="loader" style="display:none;"><img src="images/loader.gif" alt="Loading..." id="LoadingGraphic" /></label>-->

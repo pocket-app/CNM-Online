@@ -65,27 +65,24 @@
   
      <div id="pages_maincontent">
       
-      <h2 class="page_title">CNM Prayer Altar</h2>
+      <h2 class="page_title">Share Your Testimonies</h2>
     
      <div class="page_single layout_fullwidth_padding">   
 
             <h2 id="Note"></h2>
             <div class="contactform">
-
-<a href="share-your-prayers.html"><img src="images/share-your-prayers.png"width="100%"></a><br>
-<a href="share-your-testimonies.html"><img src="images/share-your-testimonies.png"width="100%"></a><br>
-<a href="be-a-volunteer.html"><img src="images/be-a-volunteer.png"width="100%"></a><br>
-
-
-
-
-
-
-             <br><br><br><br>
-           
-     
+            <form class="cmxform" id="ContactForm" method="post" action="">
+            <label>Name:</label>
+            <input type="text" name="ContactName" id="ContactName" value="" class="form_input required" />
+            <label>Phone No:</label>
+            <input type="text" name="ContactPhone" id="ContactPhone" value="" class="form_input required phone" />
+            <label>Email ID:</label>
+            <input type="text" name="ContactEmail" id="ContactEmail" value="" class="form_input required email" />
+      
             <!--<input type="text" name="ContactPurpose" id="ContactPurpose" value="" class="form_input required" />-->
-            
+            <label>Write your text here:</label>
+            <textarea name="ContactComment" id="ContactComment" class="form_textarea textarea required" rows="" cols=""></textarea>
+            <input type="button" name="submit" class="form_submit" id="insert" value="Send" onClick="sud_data()" />
             <!--<input class="" type="hidden" name="to"  value="youremail@yourwebsite.com" />
             <input class="" type="hidden" name="subject" value="Contacf form message" />
             <label id="loader" style="display:none;"><img src="images/loader.gif" alt="Loading..." id="LoadingGraphic" /></label>-->
