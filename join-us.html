@@ -65,22 +65,37 @@
 	
      <div id="pages_maincontent">
       
-      <h2 class="page_title">Contact</h2>
+      <h2 class="page_title">JOIN</h2>
 	  
      <div class="page_single layout_fullwidth_padding">	  
 
             <h2 id="Note"></h2>
-            <b>Cloud Nine Ministries, Grace Land Campus, Mandapada,</b><br><br>
-
-Po : Daulatabad, Dist : Cuttack – 754026, Odisha<br><br>
-
-<b>Email :</b> info@cnmindia.org<br><br>
-
-<b>Phone No :</b> (+91) 943-858-2959<br><br>
-
-<b>Phone No :</b>  (+91) 700-839-7362<br><br>
-<b>Phone No :</b>  (+91) 700-830-9994<br><br>
-
+            <div class="contactform">
+            <form class="cmxform" id="ContactForm" method="post" action="">
+            <label>Name:</label>
+            <input type="text" name="ContactName" id="ContactName" value="" class="form_input required" />
+            <label>Email:</label>
+            <input type="text" name="ContactEmail" id="ContactEmail" value="" class="form_input required email" />
+			<label>Purpose:</label>
+			<select name="ContactPurpose" id="ContactPurpose" class="form_input required" style="padding:8px;">
+				<option value="">--select--</option>
+				<option value="Prayer Request">Prayer Request</option>
+				<option value="Apply for Membership">Apply for Membership</option>
+				<option value="Apply for Baptism">Apply for Baptism</option>
+				<option value="Apply for Marriage">Apply for Marriage</option>
+				<option value="Testimony">Testimony</option>
+        <option value="Donate">Donate</option>
+				<option value="Others">Others</option>
+			</select>
+            <!--<input type="text" name="ContactPurpose" id="ContactPurpose" value="" class="form_input required" />-->
+            <label>Message:</label>
+            <textarea name="ContactComment" id="ContactComment" class="form_textarea textarea required" rows="" cols=""></textarea>
+            <input type="button" name="submit" class="form_submit" id="insert" value="Send" onClick="sud_data()" />
+            <!--<input class="" type="hidden" name="to"  value="youremail@yourwebsite.com" />
+            <input class="" type="hidden" name="subject" value="Contacf form message" />
+            <label id="loader" style="display:none;"><img src="images/loader.gif" alt="Loading..." id="LoadingGraphic" /></label>-->
+            </form>
+            </div>
             
       <!--<h3>Our Location</h3>-->
       
